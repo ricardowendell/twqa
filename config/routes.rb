@@ -52,6 +52,7 @@ Twqa::Application.routes.draw do
   root :to => 'qa#index'
 
   match "/questions" => "qa#questions"
+  match "/players" => "player#players"
 
   # See how all your routes lay out with "rake routes"
 
