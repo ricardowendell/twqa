@@ -16,6 +16,7 @@ group :assets do
 end
 
 gem 'jquery-rails'
+gem 'formtastic', '~> 2.1.1'
 
 group :development, :test do
   gem "mysql2"

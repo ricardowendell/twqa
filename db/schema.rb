@@ -14,7 +14,13 @@
 ActiveRecord::Schema.define(:version => 20120504) do
 
   create_table "players", :force => true do |t|
-    t.string "name"
+    t.string "first_name",    :null => false
+    t.string "last_name",     :null => false
+    t.string "email",         :null => false
+    t.string "mobile_number", :null => false
+    t.string "city",          :null => false
+    t.string "company_name",  :null => false
+    t.string "role",          :null => false
   end
 
 end
