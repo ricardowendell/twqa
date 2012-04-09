@@ -6,8 +6,17 @@
 		</div>
 
 		<%= semantic_form_for @player do |f| %>
-			<%= f.inputs %>
-			<%= f.actions %>
+			<%= f.input :first_name %>
+			<%= f.input :last_name %>
+			<%= f.input :email %>
+			<%= f.input :mobile_number %>
+			<%= f.input :city, :as => :select, :collection => ['Melbourne','Brisbane','Sydney','Perth','Other'] , :include_blank => false %>
+			<%= f.input :company_name %>
+			<%= f.input :role, :as => :select, :collection => ['CIO/CTO','CXO Other','VP','Director','Manager','Technologist','Developer','Consultant','Other'], :include_blank => false%>
+			<%= f.actions do %>
+				<%= f.action :submit, :label => 'Register' %>
+			<% end %>
+				 
 		<% end %>
 		
   </div>
