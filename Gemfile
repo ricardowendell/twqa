@@ -19,7 +19,7 @@ gem 'jquery-rails'
 gem 'formtastic', '~> 2.1.1'
 
 group :development, :test do
-  gem "mysql2"
+  gem "pg"
 end
 group :production do
   gem 'pg'
