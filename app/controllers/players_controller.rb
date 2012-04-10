@@ -7,7 +7,7 @@ class PlayersController < ApplicationController
   def create
     @player = Player.new(params[:player])
     if @player.save
-      redirect_to root_path
+      redirect_to questions_path
     else
       render new_player_path
     end
