@@ -1,6 +1,8 @@
 require 'csv'
 
 class ReportsController < ApplicationController
+  before_filter :authenticate
+
     def index
     end
 
@@ -8,7 +10,7 @@ class ReportsController < ApplicationController
       player_csv_data
     end
 
-  private
+  protected
 
     def player_csv_data
       csv_string = CSV.generate do |csv|
@@ -36,6 +38,12 @@ class ReportsController < ApplicationController
       send_data csv_string,
                 :type => 'text/csv; charset=iso-8859-1; header=present',
                 :filename => 'player_data.csv'
+    end
 
+    #TODO: better place to store the username and password? perhaps database table?
+    def authenticate
+      authenticate_or_request_with_http_basic do |username, password|
+        username == "twqaadmin" && password == "imnotstupid2"
+      end
     end
 end
