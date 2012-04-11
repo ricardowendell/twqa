@@ -20,6 +20,7 @@ gem 'formtastic', '~> 2.1.1'
 
 group :development, :test do
   gem "pg"
+	gem "rspec-rails"
 end
 group :production do
   gem 'pg'
