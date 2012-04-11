@@ -17,9 +17,9 @@
 	      function testRecordsTime()
 	      {
 						var the_timer = new Timer();
-						the_timer.astart();
+						the_timer.start();
 						sleep(1);
-						the_timer.astop();
+						the_timer.stop();
 						assert('Time has elapsed', the_timer.elapsed() > 0);
 	      };
 
