@@ -1,4 +1,7 @@
 Twqa::Application.routes.draw do
+  get "/reports" => "reports#index"
+  get "/reports/download"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
