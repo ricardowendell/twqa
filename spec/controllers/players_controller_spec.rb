@@ -12,7 +12,7 @@ describe PlayersController do
     describe 'on valid criteria' do
       it 'should redirect to questions' do
         valid_attributes = {first_name: "a", last_name: "b", 
-                            email: "bm", mobile_number: "m",
+                            email: "bm@fake.com", mobile_number: "m",
                             city: "Darwin", company_name: "lk",
                             role: "Developer"}
 

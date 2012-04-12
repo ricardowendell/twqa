@@ -8,7 +8,7 @@
 		<%= semantic_form_for @player do |f| %>
 			<%= f.input :first_name %>
 			<%= f.input :last_name %>
-			<%= f.input :email %>
+			<%= f.input :email, :as => :email %>
 			<%= f.input :mobile_number %>
 			<%= f.input :city, :as => :select, :collection => PlayerHelper::cities, :include_blank => false %>
 			<%= f.input :company_name %>
