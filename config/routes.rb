@@ -52,7 +52,7 @@ Twqa::Application.routes.draw do
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
   # root :to => 'welcome#index'
-  root :to => 'players#new'
+  root :to => 'welcome#welcome'
 
   match "/welcome" => "welcome#welcome"
   match "/questions" => "qa#questions"
