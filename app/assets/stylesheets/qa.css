@@ -139,3 +139,7 @@ a#welcome {
   color: #fff;
   line-height: 50px;
 }
+
+a.download_link{
+  color: #ffff00;
+}
