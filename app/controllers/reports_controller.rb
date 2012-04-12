@@ -40,10 +40,11 @@ class ReportsController < ApplicationController
                 :filename => 'player_data.csv'
     end
 
-    #TODO: better place to store the username and password? perhaps database table?
+    #TODO: move user name and password to config?
     def authenticate
       authenticate_or_request_with_http_basic do |username, password|
-        username == "twqaadmin" && password == "imnotstupid2"
+        actual_password = ENV['ADMIN_PASSWORD'] || 'password'
+        username == "twqaadmin" && password == actual_password
       end
     end
 end
