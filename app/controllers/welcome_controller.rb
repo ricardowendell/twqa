@@ -12,6 +12,7 @@ class WelcomeController < ApplicationController
       redirect_to questions_path
     else
       @player = Player.new(:email => email)
+      @player.errors.add(:email, 'Email not found. Please register first.')
       render :registered
     end
   end
