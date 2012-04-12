@@ -1,5 +1,3 @@
-require 'csv'
-
 class ReportsController < ApplicationController
   before_filter :authenticate
 
@@ -7,35 +5,13 @@ class ReportsController < ApplicationController
     end
 
     def download
-      player_csv_data
+      player_csv_file
     end
 
   protected
 
-    def player_csv_data
-      csv_string = CSV.generate do |csv|
-        csv << ["id",
-                "First name",
-                "Last name",
-                "Email",
-                "Mobile number",
-                "City",
-                "Company name",
-                "Role"]
-
-          Player.find(:all).each do |player|
-            csv << [player.id,
-                    player.first_name,
-                    player.last_name,
-                    player.email,
-                    player.mobile_number,
-                    player.city,
-                    player.company_name,
-                    player.role ]
-          end
-      end
-
-      send_data csv_string,
+    def player_csv_file
+      send_data Player.csv_data,
                 :type => 'text/csv; charset=iso-8859-1; header=present',
                 :filename => 'player_data.csv'
     end
