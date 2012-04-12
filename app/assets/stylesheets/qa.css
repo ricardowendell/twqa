@@ -121,3 +121,17 @@ footer {
 	background: #000 url("line2.png") top center no-repeat;
 	padding: 5px 40px;
 }
+
+
+
+/* Styling for counter */
+#counter {
+  width: 275px;
+  margin: 0px auto;
+}
+.cntSeparator {
+  font-size: 54px;
+  margin: 10px 7px;
+  color: #fff;
+  line-height: 50px;
+}

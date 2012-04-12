@@ -10,4 +10,7 @@ function Timer() {
 	this.elapsed = function() {
 		return this.endTime - this.startTime;
 	};
+	this.elapsedSeconds = function() {
+		return this.elapsed() / 1000;
+	};
 }

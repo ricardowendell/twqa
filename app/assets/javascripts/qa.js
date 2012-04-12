@@ -2,6 +2,14 @@ $(document).ready(function() {
 
   var numberOfQuestionsToAsk = 3;
   var questionsData;
+  var timer = new Timer();
+
+	//Timer experiement
+  $('#counter').flipify({
+	image: 'assets/digits.png',
+	startTime: '00:00',
+	format: 'mm:ss'
+  });
 
   function loadQuestions(callBack) {
     $.get("questions.json", function(data) {
@@ -39,6 +47,8 @@ $(document).ready(function() {
     $("#win").hide();
     $("#lose").hide();
     renderQuestions(questionsData, numberOfQuestionsToAsk);
+	timer.start();
+	$('#counter').reset();
     ask($(".question").first(), 0, 0);
   }
 
@@ -64,6 +74,9 @@ $(document).ready(function() {
   }
 
   function mark(score) {
+	timer.stop();
+	$('#counter').pause();
+	$("p.timing").text("Completed in " + timer.elapsedSeconds() + "s");
     if (score === numberOfQuestionsToAsk) {
       $("#win").toggle();
     } else {
