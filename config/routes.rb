@@ -54,6 +54,7 @@ Twqa::Application.routes.draw do
   # root :to => 'welcome#index'
   root :to => 'players#new'
 
+  match "/welcome" => "welcome#welcome"
   match "/questions" => "qa#questions"
   resources :players 
 
