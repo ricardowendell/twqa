@@ -122,6 +122,10 @@ footer {
 	padding: 5px 40px;
 }
 
+a#welcome {
+	color: #fff;
+	text-decoration: underline;
+}
 
 
 /* Styling for counter */
