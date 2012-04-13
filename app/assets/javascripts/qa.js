@@ -6,7 +6,7 @@ $(document).ready(function() {
 
 	//Timer experiement
   $('#counter').flipify({
-	image: 'assets/digits.png',
+	image: '/assets/digits.png',
 	startTime: '00:00',
 	format: 'mm:ss'
   });
