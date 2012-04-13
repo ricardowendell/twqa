@@ -59,7 +59,7 @@ Twqa::Application.routes.draw do
   match "/welcome" => "welcome#welcome"
   match "/registered" => "welcome#registered"
   match "/registered/login" => "welcome#login"
-  match "/questions" => "qa#questions"
+  match "/questions/:player" => "qa#questions", :as => 'questions'
   resources :players 
 
   # See how all your routes lay out with "rake routes"

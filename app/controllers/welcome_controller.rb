@@ -8,8 +8,9 @@ class WelcomeController < ApplicationController
   
   def login
     email = params[:player][:email]
-    unless Player.where(:email => email).empty?
-      redirect_to questions_path
+    players = Player.where(:email => email)
+    unless players.empty?
+      redirect_to questions_path(:player => players.first.id)
     else
       @player = Player.new(:email => email)
       @player.errors.add(:email, 'Email not found. Please register first.')

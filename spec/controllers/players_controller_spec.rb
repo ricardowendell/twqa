@@ -15,10 +15,10 @@ describe PlayersController do
                             email: "bm@fake.com", mobile_number: "m",
                             city: "Darwin", company_name: "lk",
                             role: "Developer"}
-
+        Player.should_receive(:new).and_return(mock(Player, :save => true, :id => 2))
         post :create, :player => valid_attributes
 
-        response.should redirect_to('/questions')
+        response.should redirect_to('/questions/2')
       end
     end
     

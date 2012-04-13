@@ -12,11 +12,13 @@ describe WelcomeController do
     
     describe 'on valid criteria' do
       it 'should redirect to questions' do
+        player = Player.new(:email => 'bm')
+        player.id = 11
         attributes = {email: "bm"}
-        Player.stub(:where).with(:email => 'bm').and_return([Player.new(:email => 'bm')])
+        Player.stub(:where).with(:email => 'bm').and_return([player])
         post :login, :player => attributes
 
-        response.should redirect_to('/questions')
+        response.should redirect_to('/questions/11')
       end
     end
     
