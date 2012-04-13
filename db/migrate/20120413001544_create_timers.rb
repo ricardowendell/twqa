@@ -1,6 +1,6 @@
 class CreateTimers < ActiveRecord::Migration
   def change
-    create_table :timers do |t|
+    create_table :timers, :id => false do |t|
       t.integer :player_id
       t.float :time_seconds
 

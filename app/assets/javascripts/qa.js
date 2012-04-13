@@ -78,6 +78,7 @@ $(document).ready(function() {
 	$('#counter').pause();
 	$("p.timing").text("Completed in " + timer.elapsedSeconds() + "s");
     if (score === numberOfQuestionsToAsk) {
+	  $.post('/timers/'+$('#player_id').text()+'/record',{time_seconds:timer.elapsedSeconds()});
       $("#win").toggle();
     } else {
       $("#lose").toggle();
