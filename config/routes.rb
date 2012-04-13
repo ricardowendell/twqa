@@ -1,4 +1,6 @@
 Twqa::Application.routes.draw do
+  get "leaderboards/players"
+
   get "/reports" => "reports#index"
   get "/reports/download"
 
