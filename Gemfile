@@ -22,6 +22,7 @@ group :development, :test do
   gem "pg"
 	gem "rspec-rails"
   gem 'ruby-debug19', :require => 'ruby-debug'
+  gem 'capybara'
 end
 group :production do
   gem 'pg'

@@ -1,2 +1,19 @@
-<h1>Leaderboards#players</h1>
-<p>Find me in app/views/leaderboards/players.html.erb</p>
+<h1>Leaderboard</h1>
+<table id="player_leaderboard">
+  <tr>
+    <th>Rank #</th>
+    <th>Player</th>
+    <th>Company</th>
+    <th>Time</th>
+  </tr>
+
+  <% @players.each_with_index do |player, index| %>
+    <tr>
+      <td><%= index.to_i + 1 %></td>
+      <td><%= player.first_name + " " + player.last_name %></td>
+      <td><%= player.company_name %></td>
+      <td><%= player.timer.time_seconds.round(3) %></td>
+    </tr>
+  <% end %>
+</table>
+
