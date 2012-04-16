@@ -129,8 +129,8 @@ a#welcome {
 
 
 /* Styling for counter */
-#counter {
-  width: 275px;
+#clock {
+  width: 415px;
   margin: 0px auto;
 }
 .cntSeparator {
