@@ -5,12 +5,9 @@ $(document).ready(function() {
   var timer = new Timer();
 
 	//Timer experiement
-  $('#clock').flipify({
-    image: '/assets/digits.png',
-    startTime: '00:00:00',
-    format: 'mm:ss:ff',
-    interval: 10
-  });
+  setInterval(function() {
+    $('#clock').text( timer.formatMilliseconds() )
+  }, 0);
 
   function loadQuestions(callBack) {
     $.get("questions.json", function(data) {
@@ -49,7 +46,6 @@ $(document).ready(function() {
     $("#lose").hide();
     renderQuestions(questionsData, numberOfQuestionsToAsk);
 	timer.start();
-	$('#clock').reset();
     ask($(".question").first(), 0, 0);
   }
 
@@ -75,9 +71,7 @@ $(document).ready(function() {
   }
 
   function mark(score) {
-	timer.stop();
-	$('#clock').pause();
-	$("p.timing").text("Completed in " + timer.elapsedSeconds() + "s");
+    timer.stop();
     if (score === numberOfQuestionsToAsk) {
 	  $.post('/timers/'+$('#player_id').text()+'/record',{time_seconds:timer.elapsedSeconds()});
       $("#win").toggle();

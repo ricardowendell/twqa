@@ -130,7 +130,9 @@ a#welcome {
 
 /* Styling for counter */
 #clock {
-  width: 415px;
+  width: 335px;
+  font-size: 70px;
+  font-weight: bold;
   margin: 0px auto;
 }
 .cntSeparator {
