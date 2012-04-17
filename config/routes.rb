@@ -1,5 +1,6 @@
 Twqa::Application.routes.draw do
   match "/leaderboard" => "leaderboards#players"
+  match "/leaderboard/player_position/:player_id" => "leaderboards#player_position"
 
   get "/reports" => "reports#index"
   get "/reports/download"

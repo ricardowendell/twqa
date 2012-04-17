@@ -48,5 +48,21 @@ describe LeaderboardsController do
     end
 
   end
+  
+  describe '.player_position' do
+    before(:each) do
+      Timer.delete_all
+    end
+    it 'should get position based on time' do
+      Timer.create(:player_id => 2, :time_seconds => 4)
+      Timer.create(:player_id => 1, :time_seconds => 6)
+      
+      get 'player_position', :player_id => 1
+      response.body.should == '2'
+      
+      get 'player_position', :player_id => 2
+      response.body.should == '1'
+    end
+  end
 
 end

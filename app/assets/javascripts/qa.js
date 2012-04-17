@@ -74,7 +74,12 @@ $(document).ready(function() {
   function mark(score) {
     timer.stop();
     if (score === numberOfQuestionsToAsk) {
-	  $.post('/timers/'+$('#player_id').text()+'/record',{time_seconds:timer.elapsedSeconds()});
+	  $.post('/timers/'+$('#player_id').text()+'/record',{time_seconds:timer.elapsedSeconds()})
+		.success(function() {
+			$.get('/leaderboard/player_position/'+$('#player_id').text(), function(data) {
+				$('#leaderboard-position').text('Leaderboard position is #' + data)
+			});
+		});
       $("#win").toggle();
     } else {
       $("#lose").toggle();
