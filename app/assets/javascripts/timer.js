@@ -26,7 +26,7 @@ function Timer() {
   this.formatMilliseconds = function() {
     var milliseconds = this.current_elapsed();
     var m = Math.floor( milliseconds/1000/60 );
-    var s = Math.floor( (milliseconds/1000) - (m*60*1000) );
+    var s = Math.floor( (milliseconds/1000) % 60 );
     var ms = milliseconds - (s*1000) - (m*60*1000);
 
     s = zeroPad(s, 2);

@@ -4,7 +4,7 @@ $(document).ready(function() {
   var questionsData;
   var timer = new Timer();
 
-	//Timer experiement
+  $('#clock').hide();
   setInterval(function() {
     $('#clock').text( timer.formatMilliseconds() )
   }, 0);
@@ -44,6 +44,7 @@ $(document).ready(function() {
   function play() {
     $("#win").hide();
     $("#lose").hide();
+ 	$('#clock').show();
     renderQuestions(questionsData, numberOfQuestionsToAsk);
 	timer.start();
     ask($(".question").first(), 0, 0);
