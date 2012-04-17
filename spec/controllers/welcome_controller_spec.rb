@@ -1,15 +1,19 @@
 require 'spec_helper'
 
 describe WelcomeController do
+  before(:each) do
+    authenticate
+  end
+
   describe '#registered' do
     it 'should create a player object' do
       get :registered
       assigns(:player).should be_an_instance_of(Player)
     end
   end
-  
+
   describe '#login' do
-    
+
     describe 'on valid criteria' do
       it 'should redirect to questions' do
         player = Player.new(:email => 'bm')
@@ -21,7 +25,7 @@ describe WelcomeController do
         response.should redirect_to('/questions/11')
       end
     end
-    
+
     describe 'on invalid criteria' do
       it 'should render' do
         attributes = {:email => 'ascd'}

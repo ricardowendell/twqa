@@ -1,6 +1,10 @@
 require 'spec_helper'
 
 describe PlayersController do
+  before(:each) do
+    authenticate
+  end
+
   describe '#new' do
     it 'should create a player object' do
       get :new

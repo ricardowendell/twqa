@@ -1,6 +1,9 @@
 require 'spec_helper'
 
 describe TimersController do
+  before(:each) do
+    authenticate
+  end
 
   describe '#record' do
     describe 'no record exists' do
@@ -11,7 +14,7 @@ describe TimersController do
         post :record, valid_attributes
       end
     end
-    
+
     describe 'faster record exists' do
       it 'should not store time' do
         valid_attributes = {player_id: 7, time_seconds: 1.2}
@@ -21,7 +24,7 @@ describe TimersController do
         post :record, valid_attributes
       end
     end
-    
+
     describe 'slower record exists' do
       it 'should store time' do
         valid_attributes = {player_id: 8, time_seconds: 2.03}

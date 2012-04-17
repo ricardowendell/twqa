@@ -2,6 +2,10 @@ require 'spec_helper'
 
 describe LeaderboardsController do
 
+  before(:each) do
+    authenticate
+  end
+
   describe "GET 'players'" do
     it "returns http success" do
       get 'players'
