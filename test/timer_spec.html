@@ -20,7 +20,7 @@
 					the_timer.start();
 					sleep(1);
 					the_timer.stop();
-					assert('Time has elapsed', the_timer.elapsed() > 0);
+					assert('Time has elapsed', the_timer.current_elapsed() > 0);
 	      };
 	
 				function testElapsedSeconds() {
