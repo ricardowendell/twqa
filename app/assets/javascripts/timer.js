@@ -12,10 +12,9 @@ function Timer() {
 	};
 
   this.current_elapsed = function() {
-    end = Date.now();
-    if( this.endTime ) {
-      end = this.endTime;
-    }
+    if( this.startTime == 0) { return 0; }
+	end = Date.now();
+    if( this.endTime ) { end = this.endTime; }
 
     return end - this.startTime;
   };

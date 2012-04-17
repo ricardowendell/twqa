@@ -14,6 +14,13 @@
 				  }
 				}
 
+
+	      function testInitialTimeIsZero()
+	      {
+					var the_timer = new Timer();
+					assert('Time has elapsed', the_timer.elapsedSeconds() == 0);
+	      };
+	
 	      function testRecordsTime()
 	      {
 					var the_timer = new Timer();
