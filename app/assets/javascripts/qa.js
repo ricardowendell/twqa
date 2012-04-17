@@ -80,7 +80,7 @@ $(document).ready(function() {
     }
   }
 
-  $(".alert-actions a").on("click", function(event) {
+  $(".alert-actions a:nth-child(1)").on("click", function(event) {
     play();
   });
 

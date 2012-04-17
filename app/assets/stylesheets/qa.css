@@ -45,7 +45,8 @@ div.options {
 #lose {background-position: 0 0;}
 
 #win p, #lose p, #win .alert-actions, #lose .alert-actions {margin-left: 180px;}
-
+.alert-actions .btn.small {float: left;}
+.alert-actions .btn.small:nth-child(2) {margin-left: 10px;}
 
 .btn {
   color: #000000;
