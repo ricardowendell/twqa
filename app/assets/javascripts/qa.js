@@ -10,7 +10,7 @@ $(document).ready(function() {
   }, 0);
 
   function loadQuestions(callBack) {
-    $.get("questions.json", function(data) {
+    $.get("/questions/questions.json", function(data) {
       questionsData = data;
       callBack();
     });
