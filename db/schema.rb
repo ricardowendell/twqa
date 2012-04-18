@@ -23,6 +23,13 @@ ActiveRecord::Schema.define(:version => 20120413001544) do
     t.string "role",          :null => false
   end
 
+  create_table "questions", :force => true do |t|
+    t.string "question",           :null => false
+    t.string "correct_answer",     :null => false
+    t.string "incorrect_answer_1", :null => false
+    t.string "incorrect_answer_2", :null => false
+  end
+
   create_table "timers", :id => false, :force => true do |t|
     t.integer  "player_id"
     t.float    "time_seconds"
