@@ -1,5 +1,6 @@
 class ReportsController < ApplicationController
-  before_filter :authenticate
+  skip_filter :app_authentication
+  before_filter :admin_authentication
 
     def index
     end
@@ -16,11 +17,10 @@ class ReportsController < ApplicationController
                 :filename => 'player_data.csv'
     end
 
-    #TODO: move user name and password to config?
-    def authenticate
+    def admin_authentication
       authenticate_or_request_with_http_basic do |username, password|
-        actual_password = ENV['ADMIN_PASSWORD'] || 'password'
-        username == "twqaadmin" && password == actual_password
+        actual_password = ENV['ADMIN_PASSWORD'] || LOCAL_PASSWORD
+        username == ADMIN_AUTH && password == actual_password
       end
     end
 end
