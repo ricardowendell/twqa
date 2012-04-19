@@ -1,6 +1,6 @@
 class ReportsController < ApplicationController
-  skip_filter :app_authentication
-  before_filter :admin_authentication
+  skip_filter :app_authentication, :only => :download
+  before_filter :admin_authentication, :only => :download
 
     def index
     end

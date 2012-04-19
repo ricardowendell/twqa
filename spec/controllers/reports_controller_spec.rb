@@ -16,14 +16,14 @@ describe ReportsController do
       response.should_not be_success
     end
 
-    it "should return http failure after entered user credential" do
-      user_auth
+    it "should return http failure after entered admin credential" do
+      admin_auth
       get 'index'
       response.should_not be_success
     end
 
-    it "returns http success after entered admin credential" do
-      admin_auth
+    it "returns http success after entered user credential" do
+      user_auth
       get 'index'
       response.should be_success
     end
