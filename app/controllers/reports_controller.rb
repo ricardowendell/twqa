@@ -18,7 +18,7 @@ class ReportsController < ApplicationController
     end
 
     def admin_authentication
-      authenticate_or_request_with_http_basic do |username, password|
+      authenticate_or_request_with_http_basic('Admin') do |username, password|
         actual_password = ENV['ADMIN_PASSWORD'] || LOCAL_PASSWORD
         username == ADMIN_AUTH && password == actual_password
       end

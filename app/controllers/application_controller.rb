@@ -6,7 +6,7 @@ class ApplicationController < ActionController::Base
   protected
 
     def app_authentication
-      authenticate_or_request_with_http_basic do |username, password|
+      authenticate_or_request_with_http_basic('User') do |username, password|
         actual_password = ENV['APP_PASSWORD'] || LOCAL_PASSWORD
         username == APP_AUTH && password == actual_password
       end
