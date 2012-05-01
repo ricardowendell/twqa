@@ -6,6 +6,7 @@ describe QaController do
       authenticate
     end
     it 'should return questions in json format' do
+      authenticate
       Question.should_receive(:all_questions)
       get :questions, :player => 1, :format => :json
     end
