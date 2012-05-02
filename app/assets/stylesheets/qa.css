@@ -43,8 +43,13 @@ div.options {
 
 #win {background-position: 0 -120px;}
 #lose {background-position: 0 0;}
+#lose #incorrect_questions {
+  margin-top: 70px;
+  background: black;
+}
 
 #win p, #lose p, #win .alert-actions, #lose .alert-actions {margin-left: 180px;}
+.alert-actions {margin-bottom: 75px;}
 .alert-actions .btn.small {float: left;}
 .alert-actions .btn.small:nth-child(2) {margin-left: 10px;}
 

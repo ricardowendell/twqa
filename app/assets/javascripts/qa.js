@@ -23,7 +23,7 @@ $(document).ready(function() {
 
       var template =
               "<div class='question'>" +
-                      "<h2>{{question}}</h2>" +
+                      "<h2 class='question_text'>{{question}}</h2>" +
                       "<div class='options'>" +
                       "<ol class='choices'>" +
                       "{{#choices}}" +
@@ -44,6 +44,7 @@ $(document).ready(function() {
   function play() {
     $("#win").hide();
     $("#lose").hide();
+    $("#incorrect_questions .incorrect_question").remove();
  	$('#clock').show();
     renderQuestions(questionsData, numberOfQuestionsToAsk);
 	timer.start();
@@ -65,6 +66,9 @@ $(document).ready(function() {
       if (chosenAnswer === correctAnswer) {
         score += 1;
       }
+      else {
+        recordIncorrectQuestion(question);
+      }
 
       question.toggle();
       ask(question.next(), questionsAsked += 1, score);
@@ -84,6 +88,19 @@ $(document).ready(function() {
     } else {
       $("#lose").toggle();
     }
+  }
+
+  function recordIncorrectQuestion(question) {
+      var questionText = question.find(".question_text").text();
+      var answer = question.find(".answer").text();
+      var template =
+        "<div class='incorrect_question'>" +
+        "<h3>" + questionText + "</h3>" +
+        "<div>Answer: " + answer + "</div>" +
+        "</div>"
+
+      var questionWithCorrectAnswer = Mustache.to_html(template);
+      $("#incorrect_questions").append(questionWithCorrectAnswer);
   }
 
   $(".alert-actions a:nth-child(1)").on("click", function(event) {
