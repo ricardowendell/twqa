@@ -40,12 +40,15 @@ describe Question do
   describe '#json_format' do
     it 'should come out in this very specific format' do
       question = Question.create(:question => '1', :correct_answer => '2',
-                                 :incorrect_answer_1 => '3', :incorrect_answer_2 => '4').json_format
-      question[:question].should == '1'
-      question[:correct_choice].should == '2'
-      question[:choices].should be_include('2')
-      question[:choices].should be_include('3')
-      question[:choices].should be_include('4')
+                                 :incorrect_answer_1 => '3', :incorrect_answer_2 => '4')
+      question_json = question.json_format
+
+      question_json[:question_id].should == question.id
+      question_json[:question].should == '1'
+      question_json[:correct_choice].should == '2'
+      question_json[:choices].should be_include('2')
+      question_json[:choices].should be_include('3')
+      question_json[:choices].should be_include('4')
     end
   end
 end
