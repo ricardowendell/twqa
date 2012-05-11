@@ -1,4 +1,5 @@
 Twqa::Application.routes.draw do
+
   match "/leaderboard" => "leaderboards#players"
   match "/leaderboard/player_position/:player_id" => "leaderboards#player_position"
 
@@ -62,6 +63,7 @@ Twqa::Application.routes.draw do
   match "/registered/login" => "welcome#login"
   match "/questions/:player" => "qa#questions", :as => 'questions'
   match "/timers/:player_id/record" => "timers#record", :as => 'timers_record'
+  match "/attempted_questions/:player_id/record" => "attempted_questions#record", :as => 'attempted_questions_record'
   # resources :timers do
     # member do
       # post :record

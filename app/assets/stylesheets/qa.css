@@ -30,7 +30,7 @@ div.options {
 	padding: 0;
 }
 
-#win, #lose, .question, .answer {
+#win, #lose, .question, .answer, .question_id{
   display: none;
 }
 

@@ -1,0 +1,2 @@
+module AttemptedQuestionsHelper
+end

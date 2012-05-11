@@ -3,6 +3,7 @@ $(document).ready(function() {
   var numberOfQuestionsToAsk = 3;
   var questionsData;
   var timer = new Timer();
+  var attemptedQuestionsLog = new Array();
 
   $('#clock').hide();
   setInterval(function() {
@@ -23,6 +24,7 @@ $(document).ready(function() {
 
       var template =
               "<div class='question'>" +
+                      "<div class='question_id'>{{question_id}}</div>" +
                       "<h2 class='question_text'>{{question}}</h2>" +
                       "<div class='options'>" +
                       "<ol class='choices'>" +
@@ -45,6 +47,7 @@ $(document).ready(function() {
     $("#win").hide();
     $("#lose").hide();
     $("#incorrect_questions .incorrect_question").remove();
+    attemptedQuestionsLog = [];
  	$('#clock').show();
     renderQuestions(questionsData, numberOfQuestionsToAsk);
 	timer.start();
@@ -55,6 +58,7 @@ $(document).ready(function() {
   function ask(question, questionsAsked, score) {
     if (questionsAsked === numberOfQuestionsToAsk) {
       mark(score);
+      attemptedQuestion();
     } else {
       question.toggle();
     }
@@ -65,9 +69,11 @@ $(document).ready(function() {
 
       if (chosenAnswer === correctAnswer) {
         score += 1;
+        correct_attempt(question);
       }
       else {
         recordIncorrectQuestion(question);
+        incorrect_attempt(question);
       }
 
       question.toggle();
@@ -97,10 +103,26 @@ $(document).ready(function() {
         "<div class='incorrect_question'>" +
         "<h3>" + questionText + "</h3>" +
         "<div>Answer: " + answer + "</div>" +
-        "</div>"
+        "</div>";
 
       var questionWithCorrectAnswer = Mustache.to_html(template);
       $("#incorrect_questions").append(questionWithCorrectAnswer);
+  }
+
+  function correct_attempt(question) {
+    hash_data = {"question_id":question.find(".question_id").text(),
+                 "answered_correctly":true};
+    attemptedQuestionsLog.push(hash_data);
+  }
+
+  function incorrect_attempt(question) {
+    hash_data = {"question_id":question.find(".question_id").text(),
+                 "answered_correctly":false};
+    attemptedQuestionsLog.push(hash_data);
+  }
+
+  function attemptedQuestion () {
+	  $.post('/attempted_questions/'+$('#player_id').text()+'/record', {attempted_questions:attemptedQuestionsLog});
   }
 
   $(".alert-actions a:nth-child(1)").on("click", function(event) {
