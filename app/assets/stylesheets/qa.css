@@ -1,11 +1,11 @@
 body {
-  background-color: #060606;
+  background-color: #FFFFFF;
   margin: 0;
-  font-family: courier new, Arial, sans-serif;
+  font-family: franklin gothic book;
   font-size: 13px;
   font-weight: normal;
   line-height: 18px;
-  color: #FFFFFF;
+  color: #060606;
 }
 
 .container {
@@ -14,10 +14,14 @@ body {
 }
 
 .page-header {
-  padding: 20px;
-  background-image: url("twlogo.png");
-  background-repeat: no-repeat;
-  background-position: top right;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.page-header img{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
 }
 
 div#questions {
@@ -54,34 +58,17 @@ div.options {
 .alert-actions .btn.small:nth-child(2) {margin-left: 10px;}
 
 .btn {
-  color: #000000;
+  color: #FFFFFF;
   display: block;
-
-  background-color: #d5e04d;
-  text-decoration: none;
-  background-repeat: repeat-x;
-  background-image: -khtml-gradient(linear, left top, left bottom, from(#d5e04d), to(#eaf18f));
-  background-image: -moz-linear-gradient(top, #d5e04d, #eaf18f);
-  background-image: -ms-linear-gradient(top, #d5e04d, #eaf18f);
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #d5e04d), color-stop(100%, #eaf18f));
-  background-image: -webkit-linear-gradient(top, #d5e04d, #eaf18f);
-  background-image: -o-linear-gradient(top, #d5e04d, #d5e04d);
-  background-image: linear-gradient(top, #d5e04d, #d5e04d);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d5e04d', endColorstr='#d5e04d', GradientType=0);
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  border-color: #d5e04d #d5e04d #a9b607;
-  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
 
 }
 
 .btn.large {
-  width: 300px;
-  font-size: 15px;
-  line-height: normal;
-  padding: 9px 10px;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  border-radius: 6px;
+  padding: 22px 10px 13px 10px;
+  font-weight: bold;
+  font-size: 25px;
+  height: 50px;
+  background: url("large_button.png") no-repeat;
 }
 
 .btn.small {
@@ -96,11 +83,7 @@ div.options {
 }
 
 .btn:hover {
-  background-position: 0 -15px;
-  color: #000;
-}
-.btn:focus {
-  outline: 1px dotted #666;
+  color: #3B0734;
 }
 
 .choices {
@@ -117,19 +100,17 @@ div.options {
   width: 300px;
   text-align: center;
   text-decoration: none;
-}
-
-.choices li a:hover {
-  text-decoration: none;
+  font-size: 20px;
 }
 
 footer {
-	background: #000 url("line2.png") top center no-repeat;
+  text-align:center;
 	padding: 5px 40px;
+  font-size:14px;
 }
 
 a#welcome {
-	color: #fff;
+	color: #060606;
 	text-decoration: underline;
 }
 
