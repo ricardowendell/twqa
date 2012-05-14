@@ -1,34 +1,23 @@
 <meta http-equiv="refresh" content="30" >
-<div class="container">
-  <div class="content">
-    <div class="page-header">
-      <img src="/assets/message.png" alt="Answer 3 questions correctly for your chance to win an immediate prize and get into the draw to win one of 2 apple TVs or a Kindle" />
-      <img src="/assets/line.png" alt="" />
-	</div>
 
 <div class="options">
-<h1>Leaderboard</h1>
-<table id="player_leaderboard">
-  <tr>
-    <th>Rank #</th>
-    <th>Player</th>
-    <th>Company</th>
-    <th>Time</th>
-  </tr>
-
-  <% @players.each_with_index do |player, index| %>
+  <h1>Leaderboard</h1>
+  <table id="player_leaderboard">
     <tr>
-      <td><%= index.to_i + 1 %></td>
-      <td><%= player.first_name + " " + player.last_name %></td>
-      <td><%= player.company_name %></td>
-      <td><%= player.timer.time_seconds.round(3) %></td>
+      <th>Rank #</th>
+      <th>Player</th>
+      <th>Company</th>
+      <th>Time</th>
     </tr>
-  <% end %>
-</table>
 
-</div>
-</div>
-<footer>
-  <p>&copy; ThoughtWorks 2011</p>
-</footer>
+    <% @players.each_with_index do |player, index| %>
+      <tr>
+        <td><%= index.to_i + 1 %></td>
+        <td><%= player.first_name + " " + player.last_name %></td>
+        <td><%= player.company_name %></td>
+        <td><%= player.timer.time_seconds.round(3) %></td>
+      </tr>
+    <% end %>
+  </table>
+
 </div>

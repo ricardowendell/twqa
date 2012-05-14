@@ -1,29 +1,17 @@
-<div class="container">
-  <div class="content">
-    <div class="page-header">
-      <img src="/assets/message.png" alt="Welcome to TW Agile Australia" />
-      <img src="/assets/line.png" alt="" />
-		</div>
+<div>
+	<div class="options">
+		<%= semantic_form_for @player, :url => registered_login_path do |f| %>
+			<%= f.input :email %>
+			<%= f.actions do %>
+				<%= f.action :submit, :label => 'Play', :button_html => {:class => 'btn small'} %>
+			<% end %>
+		<% end %>
 
-    <div>
-			<div class="options">
-				<%= semantic_form_for @player, :url => registered_login_path do |f| %>
-					<%= f.input :email %>
-					<%= f.actions do %>
-						<%= f.action :submit, :label => 'Play', :button_html => {:class => 'btn small'} %>
-					<% end %>
-				<% end %>
-				
-				<br />
-				
- 				<%= link_to 'Not registered? Click here to register', root_path, {:id => 'welcome'} %>
+		<br />
 
-			</div>
-			<br />
-			<br />
-		</div>
+		<%= link_to 'Not registered? Click here to register', root_path, {:id => 'welcome'} %>
 
-  <footer>
-    <p>&copy; ThoughtWorks 2011</p>
-  </footer>
+	</div>
+	<br />
+	<br />
 </div>
