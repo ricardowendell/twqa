@@ -67,9 +67,12 @@ div.options {
   padding: 22px 10px 13px 10px;
   font-weight: bold;
   font-size: 25px;
-  height: 50px;
+  height: 70px;
+  width: 320px;
   background: url("large_button.png") no-repeat;
+  border: none;
 }
+
 
 .btn.small {
   padding: 7px 9px 7px;
@@ -131,4 +134,26 @@ a#welcome {
 
 a.download_link{
   color: #ffff00;
+}
+
+div.register_form{
+  font-size: 18px;
+  list-style: none;
+  padding-left: 30px;
+  width: 775px;
+}
+
+div.register_form label {
+  font-weight: bold;
+}
+
+div.register_form fieldset.actions {
+  width: 315px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0px;
+}
+
+div.register_form fieldset.actions input.btn.large {
+  padding-top: 13px;
 }
