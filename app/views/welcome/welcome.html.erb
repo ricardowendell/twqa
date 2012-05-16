@@ -1,12 +1,8 @@
 <div>
-	<div class="options">
-		<ol class="choices">
-			<li>
-		  	<%= link_to 'Register to play', new_player_path, {:class => 'btn large primary'} %>
-				<%= link_to 'Already registered? Click here to login', registered_path, {:id => 'welcome'} %>
-	  	</li>
-		</ol>
-	</div>
+  <%= link_to 'Register to play', new_player_path, {:class => 'btn large'} %>
+  <div class="center">
+    <%= link_to 'Already registered? Click here to login', registered_path, {:id => 'welcome'} %>
+  </div>
 	<br />
 	<br />
 </div>

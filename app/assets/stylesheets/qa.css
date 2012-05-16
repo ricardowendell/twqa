@@ -12,6 +12,10 @@ body {
   color: #060606;
 }
 
+.center {
+  text-align: center;
+}
+
 .container {
   width: 820px;
 	margin: 20px auto;
@@ -78,10 +82,11 @@ div.options {
 
 .btn.large {
   color: #FFFFFF;
-  padding: 22px 10px 0px 10px;
+  padding-top: 22px;
+  margin: 0px auto;
   font-size: 25px;
   height: 70px;
-  width: 320px;
+  width: 315px;
   background: url("large_button.png") no-repeat;
   border: none;
 }
