@@ -194,6 +194,17 @@ div.register_form fieldset.actions input.btn.large {
   font-weight: bold;
 }
 
+div#login{
+  padding-bottom: 5px;
+}
+
+div#login #player_email_input {
+  margin-top: 0px;
+  margin-left: 50px;
+  margin-right: 120px;
+}
+
+
 .question_text {
   font-size: 24px;
   line-height: 30px;
