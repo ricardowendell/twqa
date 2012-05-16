@@ -35,7 +35,6 @@ div#questions {
 div.options {
 	width: 400px;
 	margin: 0 auto;
-	padding: 0;
 }
 
 #win, #lose, .question, .correct_answer, .question_id{
@@ -88,18 +87,19 @@ div.options {
 }
 
 .btn.answer {
-  height: 77px;
+  display: table-cell;
+  vertical-align: middle;
+  height: 93px;
   width: 400px;
   color: black;
   font-size: 20px;
-  padding-top: 15px;
 }
 
 .btn.answer span {
-	margin: 10px;
+	margin: 0px 10px;
 	display: inline-block;
 	vertical-align: text-top;
-	line-height: 20px;
+	line-height: 24px;
 }
 
 .btn.answer1 {
