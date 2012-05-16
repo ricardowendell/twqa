@@ -96,9 +96,7 @@ div.options {
 }
 
 .btn.answer span {
-	margin: 0px 10px;
-	display: inline-block;
-	vertical-align: text-top;
+	margin: 0px 15px;
 	line-height: 24px;
 }
 
@@ -128,19 +126,14 @@ div.options {
 }
 
 .choices {
-  list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
 .choices li {
+  list-style-type: none;
   padding-top: 20px;
 }
-
-.choices li a {
-  text-align: center;
-}
-
 
 footer {
   text-align:center;
