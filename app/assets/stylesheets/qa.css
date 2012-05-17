@@ -2,10 +2,20 @@
 	font-family: "Marydale";
 	src: url('Marydale.ttf');
 }
+
+@font-face {
+	font-family: "Franklin_gothic_book";
+	src: url('franklin_gothic_book.ttf');
+}
+
+@font-face {
+	font-family: "Franklin_gothic_demi";
+	src: url('franklin_gothic_demi.ttf');
+}
 body {
   background-color: #FFFFFF;
   margin: 0;
-  font-family: franklin gothic book;
+  font-family: "Franklin_gothic_book";
   font-size: 13px;
   font-weight: normal;
   line-height: 18px;
@@ -91,6 +101,7 @@ div.options {
 }
 
 .btn.large {
+  font-family: "franklin_gothic_demi";
   display: table-cell;
   vertical-align: middle;
   color: #FFFFFF;
