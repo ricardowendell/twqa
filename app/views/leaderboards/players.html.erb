@@ -1,7 +1,26 @@
-<meta http-equiv="refresh" content="30" >
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Leaderboard</title>
 
-<div class="options">
-  <h1>Leaderboard</h1>
+  <%= stylesheet_link_tag "qa" %>
+  <%= stylesheet_link_tag "leaderboard" %>
+  <%= javascript_include_tag "jquery-1.7" %>
+  <%= csrf_meta_tags %>
+</head>
+
+<body>
+  <div class="container_leaderboard">
+
+
+<div class="page-header_leaderboard">
+  <img class="logo_large" src="/assets/twlogo_large.png" alt="Thoughtworks" />
+  <img src="/assets/purple_double_line_300ppi.png" alt="" />
+</div>
+
+    <div class="content_leaderboard">
+
+  <p class="leaderboard_title">Leaderboard</p>
   <table id="player_leaderboard">
     <tr>
       <th>Rank #</th>
@@ -11,13 +30,20 @@
     </tr>
 
     <% @players.each_with_index do |player, index| %>
-      <tr>
-        <td><%= index.to_i + 1 %></td>
-        <td><%= player.first_name + " " + player.last_name %></td>
-        <td><%= player.company_name %></td>
-        <td><%= player.timer.time_seconds.round(3) %></td>
+	  <tr>
+        <td class="rank"><%= index.to_i + 1 %></td>
+        <td class="player_name"><%= player.first_name + " " + player.last_name %></td>
+        <td class="company"><%= player.company_name %></td>
+        <td class="time"><%= player.timer.time_seconds.round(3) %></td>
       </tr>
     <% end %>
   </table>
+<script>$("tr:odd").css("background-color", "#C97BBB");</script>
 
+  <footer>
+    <p>&copy; ThoughtWorks 2012</p>
+  </footer>
 </div>
+</div>
+</body>
+</html>

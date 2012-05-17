@@ -1,0 +1,47 @@
+div.container_leaderboard {
+  text-align: center;
+
+}
+div.content_leaderboard {
+  width: 900px;
+	margin: 0px auto;
+
+}
+
+div.page-header_leaderboard {
+  padding-top: 30px;
+}
+
+div.page-header_leaderboard img {
+  width: 1200px;
+}
+
+div.page-header_leaderboard img.logo_large {
+  width: 600px;
+}
+
+.leaderboard_title {
+  font-family: Marydale;
+  font-size: 45px;
+}
+
+table#player_leaderboard tbody{
+  font-family: franklin gothic book;
+  font-size: 23px;
+  line-height: 22px;
+  width: 100%;
+}
+
+table#player_leaderboard td{
+	padding: 5px 0px;
+}
+table#player_leaderboard tr:nth-child(even) { font-color:#3B0734; }
+
+table#player_leaderboard td.rank { width: 9%; }
+table#player_leaderboard td.player_name { width: 36%; }
+table#player_leaderboard td.company { width: 37%; }
+table#player_leaderboard td.time { width: 18%; }
+
+
+
+
