@@ -204,8 +204,13 @@ div#login #player_email_input {
   margin-right: 120px;
 }
 
-
 .question_text {
   font-size: 24px;
   line-height: 30px;
+}
+
+#instruction_box img {
+  padding-left: 15px;
+  margin-top: -30px;
+  background-color: #FFFFFF;
 }
