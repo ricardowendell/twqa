@@ -32,7 +32,7 @@
   padding-left: 15px;
   padding-bottom: 30px;
   margin-top: -30px;
-  background-color: #FFFFFF;
+  background-color: white;
 }
 
 div#questions {
@@ -76,8 +76,9 @@ div.options{
 #alert-actions .btn.small:nth-child(2) {margin-left: 10px;}
 
 .btn {
-  display: block;
   width: 320px;
+  display: table-cell;
+  vertical-align: middle;
   text-align: center;
   text-decoration: none;
   font-weight: bold;
@@ -91,9 +92,7 @@ div.options{
 
 .btn.large {
   font-family: "franklin_gothic_demi";
-  display: table-cell;
-  vertical-align: middle;
-  color: #FFFFFF;
+  color: white;
   margin: 0px auto;
   font-size: 25px;
   height: 70px;
@@ -103,8 +102,6 @@ div.options{
 }
 
 .btn.answer {
-  display: table-cell;
-  vertical-align: middle;
   padding: 0px 10px;
   height: 93px;
   width: 400px;
@@ -126,12 +123,11 @@ div.options{
 }
 
 .btn.small {
+  font-family: "franklin_gothic_demi";
   font-size: 20px;
-  display: block;
   width: 200px;
-  height:50px;
-  text-align: center;
-  color: #FFFFFF;
+  height:43px;
+  color: white;
   padding-top:10px;
 }
 
