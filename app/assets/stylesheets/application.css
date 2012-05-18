@@ -1,1 +1,33 @@
 /*= require formtastic */
+@font-face {
+	font-family: "Marydale";
+	src: url('Marydale.ttf');
+}
+
+@font-face {
+	font-family: "Franklin_gothic_book";
+	src: url('franklin_gothic_book.ttf');
+}
+
+@font-face {
+	font-family: "Franklin_gothic_demi";
+	src: url('franklin_gothic_demi.ttf');
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background-color: #FFFFFF;
+  font-family: "Franklin_gothic_book";
+  line-height: 18px;
+  color: #060606;
+}
+
+footer {
+  text-align:center;
+  padding: 5px 40px;
+  font-size:14px;
+}
+

@@ -15,7 +15,7 @@
 </head>
 <body>
   <div class="container">
-    <div class="content">
+    <div id="content">
 
       <div class="page-header">
         <img class="logo_small" src="/assets/twlogo_small.png" alt="Thoughtworks" />
@@ -23,12 +23,11 @@
       </div>
 
       <%= yield %>
-
-      <footer>
-        <p>&copy; ThoughtWorks 2012</p>
-      </footer>
-
     </div>
+
+    <footer>
+      <p>&copy; ThoughtWorks 2012</p>
+    </footer>
   </div>
 </body>
 </html>

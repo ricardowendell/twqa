@@ -1,34 +1,16 @@
-@font-face {
-	font-family: "Marydale";
-	src: url('Marydale.ttf');
-}
-
-@font-face {
-	font-family: "Franklin_gothic_book";
-	src: url('franklin_gothic_book.ttf');
-}
-
-@font-face {
-	font-family: "Franklin_gothic_demi";
-	src: url('franklin_gothic_demi.ttf');
-}
-body {
-  background-color: #FFFFFF;
-  margin: 0;
-  font-family: "Franklin_gothic_book";
-  font-size: 13px;
-  font-weight: normal;
-  line-height: 18px;
-  color: #060606;
-}
-
 .center {
   text-align: center;
 }
 
 .container {
+  height: 100%;
   width: 820px;
 	margin: 20px auto;
+}
+
+#content {
+  min-height: 100%;
+  margin-bottom: -75px;
 }
 
 .page-header {
@@ -162,19 +144,11 @@ div.options {
   padding-top: 20px;
 }
 
-footer {
-  text-align:center;
-  padding: 5px 40px;
-  clear:both;
-  font-size:14px;
-}
-
 a#welcome {
 	color: #060606;
 	text-decoration: underline;
 	font-size: 19px;
 }
-
 
 /* Styling for counter */
 #clock {
