@@ -1,11 +1,12 @@
-div.container_leaderboard {
+div.container {
+  height: 100%;
   text-align: center;
-
 }
-div.content_leaderboard {
-  width: 900px;
-	margin: 0px auto;
 
+div.content {
+  min-height: 100%;
+  width: 900px;
+	margin: 0px auto -75px auto;
 }
 
 div.page-header_leaderboard {
@@ -23,6 +24,7 @@ div.page-header_leaderboard img.logo_large {
 .leaderboard_title {
   font-family: Marydale;
   font-size: 45px;
+  margin-bottom: 20px;
 }
 
 table#player_leaderboard tbody{

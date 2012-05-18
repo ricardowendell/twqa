@@ -3,7 +3,6 @@
 <head>
   <title>Leaderboard</title>
 
-  <%= stylesheet_link_tag "qa" %>
   <%= stylesheet_link_tag "application" %>
   <%= stylesheet_link_tag "leaderboard" %>
   <%= javascript_include_tag "jquery-1.7" %>
@@ -12,19 +11,19 @@
 
 <body>
 
-  <div class="container_leaderboard">
-    <div class="page-header_leaderboard">
-      <img class="logo_large" src="/assets/twlogo_large.png" alt="Thoughtworks" />
-      <img src="/assets/purple_double_line_300ppi.png" alt="" />
-    </div>
+  <div class="container">
+    <div class="content">
+      <div class="page-header_leaderboard">
+        <img class="logo_large" src="/assets/twlogo_large.png" alt="Thoughtworks" />
+        <img src="/assets/purple_double_line_300ppi.png" alt="" />
+      </div>
 
-    <%= yield %>
+      <%= yield %>
+    </div>
 
     <footer>
       <p>&copy; ThoughtWorks 2012</p>
     </footer>
   </div>
-
 </body>
-
 </html>
