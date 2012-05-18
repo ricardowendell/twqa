@@ -9,19 +9,19 @@ div.content {
 	margin: 0px auto -75px auto;
 }
 
-div.page-header_leaderboard {
+div.page-header {
   padding-top: 30px;
 }
 
-div.page-header_leaderboard img {
+div.page-header img {
   width: 1200px;
 }
 
-div.page-header_leaderboard img.logo_large {
+div.page-header img.logo_large {
   width: 600px;
 }
 
-.leaderboard_title {
+.title {
   font-family: Marydale;
   font-size: 45px;
   margin-bottom: 20px;
@@ -34,11 +34,7 @@ table#player_leaderboard tbody{
   width: 100%;
 }
 
-table#player_leaderboard td{
-	padding: 5px 0px;
-}
-table#player_leaderboard tr:nth-child(even) { font-color:#3B0734; }
-
+table#player_leaderboard td{ padding: 5px 0px; }
 table#player_leaderboard td.rank { width: 9%; }
 table#player_leaderboard td.player_name { width: 36%; }
 table#player_leaderboard td.company { width: 37%; }
