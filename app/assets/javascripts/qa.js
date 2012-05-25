@@ -51,7 +51,6 @@ $(document).ready(function() {
     $("#win").hide();
     $("#lose").hide();
 	$("#alert-actions").hide();
-    $("#incorrect_questions .incorrect_question").remove();
     attemptedQuestionsLog = [];
  	$('#clock').show();
     renderQuestions(questionsData, numberOfQuestionsToAsk);
@@ -77,7 +76,6 @@ $(document).ready(function() {
         correct_attempt(question);
       }
       else {
-        recordIncorrectQuestion(question);
         incorrect_attempt(question);
       }
 
@@ -98,22 +96,18 @@ $(document).ready(function() {
       $("#win").toggle();
     } else {
       $("#lose").toggle();
+      displayScore(score);
       $('#clock').hide();
     }
 	$("#alert-actions").toggle();
   }
 
-  function recordIncorrectQuestion(question) {
-      var questionText = question.find(".question_text").text();
-      var answer = question.find(".correct_answer").text();
-      var template =
-        "<div class='incorrect_question'>" +
-        "<p>" + questionText + "</p>" +
-        "<div>Answer: " + answer + "</div>" +
-        "</div>";
+  function displayScore(score) {
+      var lose_result =
+        "You have answered " + score +
+        " out of " + numberOfQuestionsToAsk + " question(s) correctly.";
 
-      var questionWithCorrectAnswer = Mustache.to_html(template);
-      $("#incorrect_questions").append(questionWithCorrectAnswer);
+      $("#lose_result").text(lose_result);
   }
 
   function correct_attempt(question) {
