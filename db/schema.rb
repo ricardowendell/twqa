@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120503043600) do
+ActiveRecord::Schema.define(:version => 20120528063122) do
 
   create_table "attempted_questions", :id => false, :force => true do |t|
     t.integer  "question_id"
@@ -32,7 +32,7 @@ ActiveRecord::Schema.define(:version => 20120503043600) do
   end
 
   create_table "questions", :force => true do |t|
-    t.string "question",           :null => false
+    t.text   "question",           :null => false
     t.string "correct_answer",     :null => false
     t.string "incorrect_answer_1", :null => false
     t.string "incorrect_answer_2", :null => false
