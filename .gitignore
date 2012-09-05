@@ -1,3 +1,7 @@
+*.swp
+Gemfile
+Gemfile.lock
+*.gem
 .bundle
 db/*.sqlite3
 log/*.log
