@@ -20,13 +20,9 @@ gem 'jquery-rails'
 gem 'formtastic', '~> 2.1.1'
 
 group :development, :test do
-  gem "pg"
-	gem "rspec-rails"
-  gem 'ruby-debug19', :require => 'ruby-debug'
+  gem "sqlite3", "~> 1.3.3"
+  gem "rspec-rails"
   gem 'capybara'
-end
-group :production do
-  gem 'pg'
 end
 
 # To use ActiveModel has_secure_password
