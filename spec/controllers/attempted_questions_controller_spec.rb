@@ -27,4 +27,11 @@ describe AttemptedQuestionsController do
     end
   end
 
+  describe "#correct" do
+    it "should receive the responses" do
+      log = {"0" => {"question_id" => 1, "answer" => "a silly answer"} } 
+      post_data = {player_id: 1, attempted_questions: log} 
+      post :correct, post_data
+    end
+  end
 end

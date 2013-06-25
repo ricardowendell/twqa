@@ -9,4 +9,7 @@ class AttemptedQuestionsController < ApplicationController
     render :nothing => true
   end
 
+  def correct
+    render :nothing => true
+  end
 end
