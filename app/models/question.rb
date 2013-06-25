@@ -2,6 +2,15 @@ require 'csv'
 
 class Question < ActiveRecord::Base
 
+  def self.some_questions
+    questions = Question.all.collect { |question| question.json_format }
+    questions = load_questions_from_csv if questions.empty?
+
+    some_questions = []
+    questions.each_with_index{ |question, index| some_questions << question if index < 3 }
+    some_questions
+  end
+
   def self.all_questions
     questions = Question.all.collect { |question| question.json_format }
     questions = load_questions_from_csv if questions.empty?

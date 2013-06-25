@@ -1,6 +1,27 @@
 require 'spec_helper'
 
 describe Question do
+
+  describe '#some_questions' do
+    let(:questions_from_csv) do
+      [
+        ['author', '1', 'correct', 'wrong1', 'wrong2'],
+        ['author', '2', 'correct', 'wrong1', 'wrong2'],
+        ['author', '3', 'correct', 'wrong1', 'wrong2'],
+        ['author', '4', 'correct', 'wrong1', 'wrong2']
+      ]
+    end
+
+    before(:each) do
+      Question.delete_all
+      CSV.should_receive(:read).and_return(questions_from_csv)
+    end
+
+    it 'returns 3 questions' do
+      Question.some_questions.size.should == 3
+    end
+  end
+
   describe '.all_questions' do
     before(:each) do
       Question.delete_all
