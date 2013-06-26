@@ -94,32 +94,6 @@ Are kittens cute?,100
     all_attempts[1].should == attempt3
     all_attempts[2].should == attempt1
   end
-
-  describe "#correct_and_create" do
-    let(:correct_question) { Question.new(id: 1, correct_answer: 'my silly answer') }
-
-    before (:each) do
-      Question.should_receive(:find).with(1).and_return(correct_question)
-    end
-
-    context 'when response matches the correct one' do
-      it 'creates a correctly answered AttemptedQuestion' do
-        attemptedQuestion = AttemptedQuestion.correct_and_create(:question_id => 1,
-                                             :player_id => 1,
-                                             :answer => 'my silly answer')
-
-        attemptedQuestion.answered_correctly.should be_true
-      end
-    end
-
-    context 'when response does not matches the correct one' do
-      it 'creates a not correctly answered AttemptedQuestion' do
-        attemptedQuestion = AttemptedQuestion.correct_and_create(:question_id => 1,
-                                             :player_id => 1,
-                                             :answer => 'my silly and wrong answer')
-
-        attemptedQuestion.answered_correctly.should be_false
-      end
-    end
-  end
+  
+  
 end

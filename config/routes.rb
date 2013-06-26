@@ -65,7 +65,6 @@ Twqa::Application.routes.draw do
   match "/questions/:player" => "qa#questions", :as => 'questions'
   match "/timers/:player_id/record" => "timers#record", :as => 'timers_record'
   match "/attempted_questions/:player_id/record" => "attempted_questions#record", :as => 'attempted_questions_record'
-  match "/attempted_questions/:player_id/correct" => "attempted_questions#correct", :as => 'correct_attempted_questions'
   # resources :timers do
     # member do
       # post :record

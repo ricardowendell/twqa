@@ -8,16 +8,7 @@ class AttemptedQuestion < ActiveRecord::Base
   validates_presence_of :player_id, :question_id
 
   default_scope :order =>  "question_id ASC"
-
-  def self.correct_and_create(params)
-    question = Question.find(params[:question_id])
-    answer = params.delete(:answer)
-    if answer == question.correct_answer
-      params[:answered_correctly] = true
-    end
-    AttemptedQuestion.new(params)
-  end
-
+  
   def self.csv_data
     CSV.generate do |csv|
       csv << ['QUESTION','PERCENTAGE_CORRECT_FIRST_ATTEMPT']
