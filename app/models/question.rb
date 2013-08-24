@@ -11,8 +11,8 @@ class Question < ActiveRecord::Base
   def self.load_questions_from_csv
     questions_file = File.expand_path(File.join("config", "questions.csv"))
     CSV.read(questions_file).collect do |row|
-      Question.create(:question => row[1], :correct_answer => row[2],
-                      :incorrect_answer_1 => row[3], :incorrect_answer_2 => row[4]).json_format
+      Question.create(:question => row[0], :correct_answer => row[1],
+                      :incorrect_answer_1 => row[2], :incorrect_answer_2 => row[3]).json_format
     end
   end
 
