@@ -1,0 +1,40 @@
+Que ano a ThoughtWorks foi fundada?	1993	1998	2002
+O papel do Martin Fowler na ThoughtWorks?	Chief Scientist	Maravilha barbuda	CTO
+A ThoughtWorks tem escritórios em quantos países?	12	7	8
+A ThoughtWorks também tem produtos?	Não	Sim	Produto e serviços
+Quais são os produtos da ThoughtWorks Studios?	Mingle, Twist, Go, Snap	Mingle, Selenium, CruiseControl	Mingle, Selenium, Cruise, Twist
+Quantos produtos a ThoughtWorks Studios tem?	3	4	5
+Quais destas ferramentas Open Source a ThoughtWorks NÃO lançou?	Cucumber	Selenium	CruiseControl
+O que é a ThoughtWorks Studios?	Divisão de produtos e treinamento da ThoughtWorks	O estúdio de arte de nosso fundador	Uma sala em cada um dos escritórios da ThoughtWorks, dedicada à meditação
+O que é Twist?	Test automation tool	Plataforma	Test management tool
+Qual destes NÃO é um valor da ThoughtWorks?	Proteger a nossa marca	Divertir-se	Criar um mundo melhor através da tecnologia
+Em que década Ruby foi criado?	90's	80's	00's
+Qual linguagem foi criada primeiro?	Lisp	Cobol	Basic
+Quem é o autor do livro 'Continuous Delivery'?	Jez Humble e David Farley	Martin Fowler e Roy Singham	Jim Highsmith e Robert 'Uncle Bob' Martin
+Qual dos seguintes preceitos NÃO faz parte do Manifesto ágil?	Mudanças nos requisitos são bem-vindas, mesmo tardiamente no desenvolvimento	Entregar frequentemente software funcionando, com preferência à menor escala de tempo.	Pessoas de negócio e software devem trabalhar separadamente durante o projeto.
+Equipes ágeis devem ser...?	Ter poder para tomar decisões locais	Gerenciadas de perto	Usar muitos 'spikes' para garantir performance
+Onde está localizada a ThoughtWorks University?	Bangalore	Chicago	London
+Quantos funcionários a ThoughtWorks tem globalmente?	1800+	2500+	1500+
+Em qual país a ThoughtWorks NÃO tem um escritório?	França	Alemanha	Reino Unido
+O mais recente escritório da ThoughtWorks está em:	Equador	Singapura	Alemanha
+Qual foi a primeira ferramenta de Integração Contínua (Continuous Integration)?	CruiseControl	Mingle	Go
+O que é 'Go'?	Uma ferramenta de Entrega Contínua	Uma ferramenta de gerenciamento de projetos ágeis	Uma ferramenta de automação de testes
+Onde a ThoughtWorks foi fundada?	Chicago	Los Angeles	Seattle
+Onde foi o primeiro escritório da ThoughtWorks fora dos EUA?	Brisbane	London	Bangalore
+Qual o nome da publicação bi-annual da ThoughtWorks sobre plataformas, linguagens, técnicas e ferramentas que impactam a indústria de Tecnologia?	Technology Radar	What's Hot and What's Not	Tech Trends
+O que é MVP?	Minimum Viable Product	Massively Volatile Project	Miniture Violin Player
+Quem é o autor do livro 'The Lean Startup'?	Eric Ries	Martin Fowler	Neal Ford
+Qual destes é um dos 7 pilares do Modelo de Maturidade de Entrega Contínua (Continuous Delivery Maturity Model)?	Alinhamento Organizacional	Stand ups contínuos	Cloud Driven Development
+Quais são os valores oferecidos por Entrega Contínua (Continuous Delivery)?	Software de alta qualidade e valor, entregue o mais rápido possível	Otimização local no processo de entrega	Minimizar as interrupçães para as equipes de desenvolvimento de modo que as entregas de vários meses de desenvolvimento terminem a tempo e sejam validados enquanto o desenvolvimento é feito
+Qual das seguintes opções não é necssária quando se aplica agilidade a um processo de sofware?	Eliminar planejamento e testes	Allow team to streamline tasks	Fazer uso de estrategias incrementais de entrega
+Mingle ferramenta de Gerenciamento de Projetos ágeis permite:	Equipes trabalhem da maneira que preferem e adaptem o processo à medida que aprendem	O PMO a controlar as tarefas e o tempo gasto em cada uma delas	Que você ignore os seus colegas de equipe e apenas se comunique movendo cartões
+Go ferramenta de Entrega Contínua da ThoughtWorks permite:	Automatizar o processo de desenvolvimento de software	Acesso irrestrito à produção para desenvolvedores	A equipe de Operações manter o time de Desenvolvimento sobre controle
+Para que Cocumber é utilizado, geralmente?	Behaviour Driven Development	máscaras faciais	Automated server deployment
+A newsletter global mensal da ThoughtWorks é chamada:	Perspectives	ThoughtWorks Thoughts	Thinking Works
+Quem é o autor do livro 'The Retrospective Handbook'?	Martin Fowler	Jez Humble	Patrick Kua
+Quantos escritórios a ThoughtWorks tem no Brasil?	2	4	3
+Onde está o primeiro escritório da ThoughtWorks no Brasil?	São Paulo	Porto Alegre	Belo Horizonte
+Quas palestrantes da Qcon são da ThoughtWorks?	Camilo Ribeiro, Danilo Sato, Jez Humble, Neal Ford	Camilo Ribeiro, Danilo Sato, Jez Humble	Jez Humble, Martin Fowler, Luca Bastos
+Quantos escritórios a ThoughtWorks tem na América do Sul?	3	4	5
+Onde estão os escritórios da ThoughtWorks no Brasil?	Porto Alegre, Recife, Sao Paulo	Porto Alegre e São Paulo	Belo Horizonte, Porto Alegre, São Paulo
+Quantos escritórios a ThoughtWorks tem mundialmente?	10+	20+	40+
