@@ -1,17 +1,17 @@
 /*= require formtastic */
 @font-face {
-	font-family: "Marydale";
-	src: url('Marydale.ttf');
+	font-family: 'Open Sans';
+	src: url('OpenSans-Regular.ttf');
 }
 
 @font-face {
-	font-family: "Franklin_gothic_book";
-	src: url('franklin_gothic_book.ttf');
+	font-family: 'Open Sans';
+	src: url('OpenSans-Regular.ttf');
 }
 
 @font-face {
-	font-family: "Franklin_gothic_demi";
-	src: url('franklin_gothic_demi.ttf');
+	font-family: "Open Sans";
+	src: url('OpenSans-Regular.ttf');
 }
 
 html, body {
@@ -20,7 +20,7 @@ html, body {
 
 body {
   background-color: #FFFFFF;
-  font-family: "Franklin_gothic_book";
+  font-family: 'Open Sans';
   line-height: 18px;
   color: #060606;
 }
@@ -31,4 +31,3 @@ footer {
   font-size:14px;
   height:30px;
 }
-

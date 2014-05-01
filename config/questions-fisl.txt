@@ -1,0 +1,30 @@
+Qual é o papel do Martin Fowler na ThoughtWorks?	Chief Scientist	Maravilha barbuda	CTO
+A ThoughtWorks tem escritórios em quantos países?	12	7	8
+Quais são os produtos da ThoughtWorks Studios?	Mingle, Twist, Go, Snap	Mingle, Selenium, CruiseControl	Mingle, Selenium, Cruise, Twist
+Quais destas ferramentas Open Source a ThoughtWorks NÃO lançou?	Cucumber	Selenium	CruiseControl
+O que é a ThoughtWorks Studios?	Divisão de produtos e treinamento da ThoughtWorks	O estúdio de arte de nosso fundador	Nossa divisão de filmes
+Qual destes NÃO é um valor da ThoughtWorks?	Proteger a nossa marca	Divertir-se	Criar um mundo melhor através da tecnologia
+Quem é o autor do livro 'Continuous Delivery'?	Jez Humble e David Farley	Martin Fowler e Roy Singham	Jim Highsmith e Robert 'Uncle Bob' Martin
+Onde está localizada a ThoughtWorks University?	Pune	Chicago	London
+Quantos funcionários a ThoughtWorks tem globalmente?	2700+	1800+	1500+
+Em qual país a ThoughtWorks NÃO tem um escritório?	França	Alemanha	Reino Unido
+Onde está o mais recente escritório da ThoughtWorks?	Equador	Singapura	Alemanha
+O que é 'Go'?	Ferramenta de Entrega Contínua	Ferramenta de gerenciamento de projetos ágeis	Um jogo de tabuleiro
+Qual o nome da publicação da ThoughtWorks sobre plataformas, linguagens, técnicas e ferramentas que impactam a indústria de TI?	Technology Radar	What's Hot and What's Not	Tech Trends
+Go, a ferramenta de Entrega Contínua da ThoughtWorks permite:	Automatizar o processo de desenvolvimento de software	Acesso irrestrito à produção para desenvolvedores	A equipe de Operações manter o time de Desenvolvimento sobre controle
+Quantos escritórios a ThoughtWorks tem no Brasil?	3	4	2
+Onde está o primeiro escritório da ThoughtWorks no Brasil?	Porto Alegre	São Paulo	Belo Horizonte
+Quantos escritórios a ThoughtWorks tem na América do Sul?	4	3	5
+Onde estão os escritórios da ThoughtWorks no Brasil?	Porto Alegre, Recife, Sao Paulo	Porto Alegre e São Paulo	Belo Horizonte, Porto Alegre, São Paulo
+Quantos escritórios a ThoughtWorks tem mundialmente?	20+	10+	40+
+Complete a frase: "A realidade está frequentemente..."	incorreta	correta	absurda
+Complete a frase "É um erro acreditar que é possível resolver qualquer problema importante usando..."	batatas	psicologia	física quântica
+Complete a frase "Se a vida há de existir em um Universo deste tamanho, uma coisa que ela não pode ter é..."	senso de proporção	senso de humor	senso de ridículo
+Complete a frase "Tempo é uma ilusão. (e o..... é uma ilusão pior ainda)"	horário de almoço	Universo	amor
+Complete a frase "Terra: praticamente..."	inofensiva	inexistente	um circo
+Qual dos produtos da ThoughtWorks é Open Source?	Go	Snap	Nenhum
+Snap-CI é gratuito?	Sim, para quem usa para OSS	Sim, para quem está criando produtos pagos.	Não
+Qual é a lei que regula o uso da internet no Brasil que foi sancionada em Abril?	Marco Civil	Lei de Uso da Rede	RTFM
+O que é o princípio de "neutralidade da rede"?	Todas as informações que trafegam na rede devem ser tratadas da mesma forma, navegando à mesma velocidade contratada	Nenhuma informação é melhor do que outra na rede	Não há um lado "certo" na rede
+O que foi o evento NETMundial?	Encontro Multissetorial Global sobre o futuro da Governança da Internet em São Paulo	Convenção global de provedores de Internet em Brasília 	Discussão global sobre games online no Rio de Janeiro
+Pipa e Sopa são...	PROTECT IP Act e Stop Online Piracy Act	Um brinquedo e um tipo de alimento	Produtos de Software Livre

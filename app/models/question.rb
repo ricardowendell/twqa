@@ -9,7 +9,7 @@ class Question < ActiveRecord::Base
   end
 
   def self.load_questions_from_csv
-    questions_file = File.expand_path(File.join("config", "questions.txt"))
+    questions_file = File.expand_path(File.join("config", "questions-fisl.txt"))
     CSV.foreach(questions_file, {:col_sep => "\t"}) do |row|
       Question.create(:question => row[0], :correct_answer => row[1],
                       :incorrect_answer_1 => row[2], :incorrect_answer_2 => row[3]).json_format

@@ -61,7 +61,7 @@ div.options{
 
 .result{
 	font-size: 40px;
-	font-family: "Marydale";
+	font-family: 'Open Sans';
 	margin-right:10px;
 }
 
@@ -209,4 +209,3 @@ div#login #player_email_input {
   font-size: 24px;
   line-height: 30px;
 }
-
