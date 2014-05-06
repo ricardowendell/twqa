@@ -1,29 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Leaderboard</title>
+	<title>Leaderboard</title>
+	<%= stylesheet_link_tag "http://fonts.googleapis.com/css?family=Open+Sans:400,700,300,300italic,400italic,700italic,800,800italic,600,600italic" %>
+	<%= stylesheet_link_tag "application" %>
 
-  <%= stylesheet_link_tag "application" %>
-  <%= stylesheet_link_tag "leaderboard" %>
-  <%= javascript_include_tag "jquery-1.7" %>
-  <%= csrf_meta_tags %>
+	<%= javascript_include_tag "jquery-1.7" %>
+	<%= csrf_meta_tags %>
+
+	<meta http-equiv="refresh" content="30">
 </head>
-
 <body>
+	<header>
+		<img class="logo" src="/assets/image/logo_small.png" width="500" height="151" alt="ThoughtWorks" />
+	</header>
 
-  <div class="container">
-    <div class="content">
-      <div class="page-header">
-        <img class="logo_large" src="/assets/twlogo_large.png" alt="Thoughtworks" />
-        <img src="/assets/purple_double_line_300ppi.png" alt="" />
-      </div>
+	<%= yield %>
 
-      <%= yield %>
-    </div>
-
-    <footer>
-      <p>&copy; ThoughtWorks 2012</p>
-    </footer>
-  </div>
+	<footer>
+		<p>&copy; ThoughtWorks 2014</p>
+	</footer>
 </body>
 </html>

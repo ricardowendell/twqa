@@ -1,27 +1,24 @@
-<div id="player_id" style="display:none;"><%= @player_id %></div>
+<div class="qa main">
+	<div id="player_id" class="hidden"><%= @player_id %></div>
 
-<div id="clock"></div>
+	<h1 class="page_title">ThoughtWorks QA</h1>
 
-<div id="questions"> </div>
+	<div id="clock"></div>
 
-<div id="win" class="alert-message block-message success">
+	<section id="questions"></section>
 
-<span class="result">You win. Contact a TWer to know about prizes!</span>
-  <img src="/assets/happy_face.png"  align='middle' />
-<div>
-  <p id="leaderboard-position"></p>
-</div>
-</div>
+	<div id="win" class="alert-message block-message success hidden">
+		<p class="result support_line">You win. Contact a TWer to know about prizes!</p>
+		<p id="leaderboard-position" class="support_line"></p>
+	</div>
 
-<div id="lose" class="alert-message block-message error">
-	<span class="result">Sorry, you didn't win this time.</span>
-	<img src="/assets/sad_face.png" align='middle' />
-  <p id='lose_result'></p>
-</div>
+	<div id="lose" class="alert-message block-message error hidden">
+		<p class="result support_line">Sorry, you didn't win this time.</p>
+		<p id="lose_result" class="support_line"></p>
+	</div>
 
-<div id="alert-actions" class="clearfix">
-	<div class="center">
-    <a class="btn small play" href="#">Play again</a>
-		<a class="btn small quit" href="/">Quit</a>
+	<div id="alert-actions" class="hidden">
+		<a class="button" href="#">Play again</a>
+		<a class="button" href="/">Quit</a>
 	</div>
 </div>

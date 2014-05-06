@@ -1,21 +1,21 @@
-<meta http-equiv="refresh" content="30">
+<div class="leaderboard main">
+	<h1 class="page_title">Leaderboard</h1>
 
-  <p class="title">Leaderboard</p>
-  <table id="player_leaderboard">
-    <tr>
-      <th>Rank #</th>
-      <th>Player</th>
-      <th>Company</th>
-      <th>Time</th>
-    </tr>
+	<table id="player_leaderboard">
+		<tr>
+			<th class="rank">Rank #</th>
+			<th class="player_name">Player</th>
+			<th class="company">Company</th>
+			<th class="time">Time</th>
+		</tr>
 
-    <% @players.each_with_index do |player, index| %>
-    <tr>
-        <td class="rank"><%= index.to_i + 1 %></td>
-        <td class="player_name"><%= player.first_name + " " + player.last_name %></td>
-        <td class="company"><%= player.company_name %></td>
-        <td class="time"><%= player.timer.time_seconds.round(3) %></td>
-      </tr>
-    <% end %>
-  </table>
-  <script>$("tr:odd").css("background-color", "#C97BBB");</script>
+		<% @players.each_with_index do |player, index| %>
+			<tr>
+				<td class="rank"><%= index.to_i + 1 %></td>
+				<td class="player_name"><%= player.first_name + " " + player.last_name %></td>
+				<td class="company"><%= player.company_name %></td>
+				<td class="time"><%= player.timer.time_seconds.round(3) %></td>
+			</tr>
+		<% end %>
+	</table>
+</div>

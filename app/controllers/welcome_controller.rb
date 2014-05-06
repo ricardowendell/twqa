@@ -1,5 +1,6 @@
 class WelcomeController < ApplicationController
   def welcome
+    @player = Player.new
   end
   
   def registered
@@ -14,7 +15,7 @@ class WelcomeController < ApplicationController
     else
       @player = Player.new(:email => email)
       @player.errors.add(:email, 'Email not found. Please register first.')
-      render :registered
+      render :welcome
     end
   end
 end

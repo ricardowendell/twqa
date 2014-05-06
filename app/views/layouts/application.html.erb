@@ -1,33 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Twqa</title>
+	<title>Twqa</title>
+	<%= stylesheet_link_tag "http://fonts.googleapis.com/css?family=Open+Sans:400,700,300,300italic,400italic,700italic,800,800italic,600,600italic" %>
+	<%= stylesheet_link_tag "application" %>
 
-  <%= stylesheet_link_tag "qa" %>
-  <%= stylesheet_link_tag "application" %>
-  <%= javascript_include_tag "jquery-1.7" %>
-  <%= javascript_include_tag "mustache" %>
-  <%= javascript_include_tag "shuffle" %>
+	<%= javascript_include_tag "jquery-1.7" %>
+	<%= javascript_include_tag "mustache" %>
+	<%= javascript_include_tag "shuffle" %>
 	<%= javascript_include_tag "timer" %>
 	<%= javascript_include_tag "qa" %>
-  <%= csrf_meta_tags %>
-
+	<%= csrf_meta_tags %>
 </head>
 <body>
-  <div class="container">
-    <div id="content">
+	<header>
+		<img class="logo" src="/assets/image/logo_small.png" width="500" height="151" alt="ThoughtWorks" />
+	</header>
 
-      <div class="page-header">
-        <img class="logo_small" src="/assets/twlogo_small.png" alt="Thoughtworks" />
-        <img src="/assets/purplr_double_line.png" alt="" />
-      </div>
+	<%= yield %>
 
-      <%= yield %>
-    </div>
-
-    <footer>
-      <p>&copy; ThoughtWorks 2014</p>
-    </footer>
-  </div>
+	<footer>
+		<p>&copy; ThoughtWorks 2014</p>
+	</footer>
 </body>
 </html>

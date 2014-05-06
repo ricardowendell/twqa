@@ -1,18 +1,12 @@
-<div>
-
-  <div id="login" class="register_form center">
-		<%= semantic_form_for @player, :url => registered_login_path do |f| %>
+<div class="login main">
+	<%= semantic_form_for @player, :url => registered_login_path do |f| %>
+		<%= f.inputs :name => "Login" do %>
 			<%= f.input :email %>
-			<%= f.actions do %>
-				<%= f.action :submit, :label => 'Play', :button_html => {:class => 'btn large'} %>
-			<% end %>
 		<% end %>
-  </div>
+		<%= f.actions do %>
+			<%= f.action :submit, :label => 'Play', :button_html => {:class => 'btn large'} %>
+		<% end %>
+	<% end %>
 
-  <div class="center">
-		<%= link_to 'Not registered? Click here to register', root_path, {:id => 'welcome'} %>
-  </div>
-
-	<br />
-	<br />
+	<p class="support_line"><%= link_to 'Not registered? Click here to register', root_path, {:id => 'welcome'} %></p>
 </div>
