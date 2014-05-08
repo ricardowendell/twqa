@@ -28,16 +28,15 @@ Qual é a lei que regula o uso da internet no Brasil que foi sancionada em Abril
 O que é o princípio de 'neutralidade da rede'?	Todas as informações que trafegam na rede devem ser tratadas da mesma forma, navegando à mesma velocidade contratada	Nenhuma informação é melhor do que outra na rede	Não há um lado 'certo' na rede
 O que foi o evento NETMundial?	Encontro Multissetorial Global sobre o futuro da Governança da Internet em São Paulo	Convenção global de provedores de Internet em Brasília 	Discussão global sobre games online no Rio de Janeiro
 Pipa e Sopa são...	PROTECT IP Act e Stop Online Piracy Act	Um brinquedo e um tipo de alimento	Produtos de Software Livre
-Qual a espécie de vida mais inteligente da Terra?    Golfinhos    Baratas    Humano
-Se você for se eventurar no espaço, o que você não deve esquecer de levar?    Uma toalha    Uma marmita    Um casaquinho
-Por que o Guia do Mochileiro é mais vendido que a Enciclopédia Galáctica?    Porque está escrito 'Não entre em pânico' na capa    Porque tem mais figuras    Porque está na lista dos mais vendidos da Amazon
-Você nunca...    Deve ouvir um Vogon recitar um poema    Deve ouvir un Vogon contar uma piada.    Deve ir conhecer a família de um Vogon
-Qual o animal que é capaz de traduzir todas as linguas?    Peixe Babel    Peixe Nemo    Peixe Baiacú
-Qual o gerador de propulsão utilizado na nave Coração de Ouro?    Gerador de Improbabilidade    Gerador de Piadas Sem Graça    Gerador De Lero Lero
-'O Robo Marvin foi projetado com a revolucionária tecnologia de Personalidade Humana Genuína (PHG).
-Infelizmente sua ajuda somente é solicitada para atividades banais e isso lhe causa uma grande...'    Depressão    Alegria    Fome
-O computador Pensador Profundo foi construído no intuíto de fornecer a resposta para o Universo e tudo mais. Que resposta foi essa?    42    Bacon    e=mc2
-O número do estande da ThoughtWorks no FISL é o mesmo que a resposta para a pergunta fundamental, que número é esse?    42    8    3.14159
-De qual região do Universo veio Ford Prefect?    Betelgeuse    Kepler-186f    Tatooine
-Qual a editora do Guia do Mochileiro das Galáxias?    Ursa Menor    Ursa Maior    Zé Colméia
-Por quem e por que a Arma do Ponto de Vista foi criada?    Pelo Pensador Profundo porque as integrantes de um consórcio Intergaláctico de Donas de Casa estavam cansadas de sempre dizer: Você não entende    Pelo Leonardo DaVinci porque ele cansou de explicar a motivação dos seus inventos    Pelo Lucius Fox para ajudar o Batman a decifrar o Charada
+Qual a espécie de vida mais inteligente da Terra?	Golfinhos	Baratas	Humano
+Se você for se eventurar no espaço, o que você não deve esquecer de levar?	Uma toalha	Uma marmita	Um casaquinho
+Por que o Guia do Mochileiro é mais vendido que a Enciclopédia Galáctica?	Porque está escrito 'Não entre em pânico' na capa	Porque tem mais figuras	Porque está na lista dos mais vendidos da Amazon
+Você nunca...	Deve ouvir um Vogon recitar um poema	Deve ouvir un Vogon contar uma piada.	Deve ir conhecer a família de um Vogon
+Qual o animal que é capaz de traduzir todas as linguas?	Peixe Babel	Peixe Nemo	Peixe Baiacú
+Qual o gerador de propulsão utilizado na nave Coração de Ouro?	Gerador de Improbabilidade	Gerador de Piadas Sem Governança	Gerador De Lero Lero
+'O Robo Marvin foi projetado com a revolucionária tecnologia de Personalidade Humana Genuína (PHG). Infelizmente sua ajuda somente é solicitada para atividades banais e isso lhe causa uma grande...'	Depressão	Alegria	Fome
+O computador Pensador Profundo foi construído no intuíto de fornecer a resposta para o Universo e tudo mais. Que resposta foi essa?	42	Bacon	e=mc2
+O número do estande da ThoughtWorks no FISL é o mesmo que a resposta para a pergunta fundamental, que número é esse?	42	8	3.14159
+De qual região do Universo veio Ford Prefect?	Betelgeuse	Kepler-186f	Tatooine
+Qual a editora do Guia do Mochileiro das Galáxias?	Ursa Menor	Ursa Maior	Zé Colméia
+Por quem e por que a Arma do Ponto de Vista foi criada?	Pelo Pensador Profundo porque as integrantes de um consórcio Intergaláctico de Donas de Casa estavam cansadas de sempre dizer: Você não entende	Pelo Leonardo DaVinci porque ele cansou de explicar a motivação dos seus inventos	Pelo Lucius Fox para ajudar o Batman a decifrar o Charada
